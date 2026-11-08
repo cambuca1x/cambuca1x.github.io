@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cameron | Roblox Developer</title>
+<meta name="description" content="Cameron: Roblox developer. Scripting, UI, AI-assisted production pipelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --panel: #161a22;
+    --line: #262c38;
+    --text: #e8ebf1;
+    --muted: #9aa3b2;
+    --accent: #4fa3ff;
+    --accent2: #7cf29c;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  nav { position: sticky; top: 0; background: rgba(13,15,20,.85); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 10; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+  nav b { font-weight: 800; }
+  nav .links a { color: var(--muted); margin-left: 20px; font-size: 14px; }
+  header { padding: 96px 0 72px; }
+  .tag { font: 500 13px "JetBrains Mono", monospace; color: var(--accent2); letter-spacing: .05em; }
+  h1 { font-size: clamp(36px, 7vw, 64px); line-height: 1.05; font-weight: 800; margin: 12px 0 20px; }
+  h1 span { color: var(--accent); }
+  .lead { color: var(--muted); font-size: 19px; max-width: 640px; }
+  .cta { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { padding: 12px 20px; border-radius: 10px; font-weight: 600; border: 1px solid var(--line); color: var(--text); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 56px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .stat b { display: block; font-size: 28px; font-weight: 800; }
+  .stat small { color: var(--muted); }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .sub { color: var(--muted); margin-bottom: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .card .img { aspect-ratio: 16/9; background: #1e2430 center/cover no-repeat; display: grid; place-items: center; color: var(--muted); font: 500 13px "JetBrains Mono", monospace; }
+  .card .body { padding: 18px; flex: 1; }
+  .card h3 { font-size: 18px; margin-bottom: 4px; }
+  .card .role { color: var(--accent2); font-size: 13px; margin-bottom: 10px; }
+  .card p { color: var(--muted); font-size: 15px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .chip { font: 500 12px "JetBrains Mono", monospace; padding: 4px 8px; border-radius: 6px; background: #1e2430; color: var(--muted); }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .skill { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .skill h3 { font-size: 16px; margin-bottom: 6px; }
+  .skill p { color: var(--muted); font-size: 14px; }
+  .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .contact .stat { color: var(--text); text-decoration: none; }
+  .contact .stat:hover { border-color: var(--accent); }
+  .contact .stat b { display: block; font-size: 17px; word-break: break-all; }
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+  .todo { outline: 2px dashed #ffb347; outline-offset: 2px; }
+  @media (max-width: 560px) { nav .links { display: none; } header { padding: 64px 0 48px; } }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>Cameron</b>
+  <div class="links"><a href="#games">Games</a><a href="#results">Results</a><a href="#ui">UI</a><a href="#pipeline">AI Workflow</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="tag">ROBLOX DEVELOPER · 4+ YEARS</div>
+  <h1>I build Roblox games<br><span>fast</span>, and they ship.</h1>
+  <p class="lead">I mainly work in scripting, user interface, reverse engineering and AI engineering. I build AI-assisted workflows that take games from idea to playable in a fraction of the usual time.</p>
+  <div class="cta">
+    <a class="btn primary" href="#games">See my work</a>
+    <a class="btn" href="#contact">Contact me</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>4+ yrs</b><small>developing on Roblox</small></div>
+    <div class="stat"><b>187M+</b><small>total visits contributed to</small></div>
+    <div class="stat"><b>Full-stack</b><small>scripting, UI &amp; AI, idea to launch</small></div>
+  </div>
+</div></header>
+
+<section id="games"><div class="wrap">
+  <h2>Games &amp; systems</h2>
+  <p class="sub">Systems and games I've built or contributed to.</p>
+  <div class="grid" id="games-cards"></div>
+</div></section>
+
+<section id="results"><div class="wrap">
+  <h2>Results</h2>
+  <p class="sub">Roblox analytics from games I've worked on, ranked against similar games in the same genre.</p>
+  <div class="grid" id="results-cards"></div>
+</div></section>
+
+<section id="ui"><div class="wrap">
+  <h2>User interface</h2>
+  <p class="sub">Menus, HUDs and shops I've built.</p>
+  <div class="grid" id="ui-cards"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>What I do</h2>
+  <p class="sub">Full game production, from first script to launch.</p>
+  <div class="skills">
+    <div class="skill"><h3>Scripting</h3><p>Luau gameplay systems: data saving, shops, eggs, rebirths, quests, leaderboards. Server-authoritative and exploit-checked.</p></div>
+    <div class="skill"><h3>UI</h3><p>Responsive menus and HUDs that work on phone, tablet and PC.</p></div>
+    <div class="skill"><h3>AI Engineering</h3><p>Custom AI agents and tools that model, build maps, write systems and test games inside Roblox Studio.</p></div>
+    <div class="skill"><h3>Reverse Engineering</h3><p>Breaking down what makes top games work and rebuilding the mechanics with my own twist.</p></div>
+    <div class="skill"><h3>Game Producing</h3><p>Picking trends, scoping the build and getting a game from idea to launch.</p></div>
+  </div>
+</div></section>
+
+<section id="pipeline"><div class="wrap">
+  <h2>AI workflow</h2>
+  <p class="sub">The AI tools I built to ship games faster than a normal solo dev.</p>
+  <div class="grid" id="pipeline-cards"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Open to engineering roles and internships. Fastest reply on Discord.</p>
+  <div class="contact">
+    <a class="stat" href="#contact" id="discord" title="Click to copy"><small>Discord</small><b>Cambuca1x</b><small id="copied">click to copy</small></a>
+    <a class="stat" href="mailto:Cambuca1x@gmail.com"><small>Email</small><b>Cambuca1x@gmail.com</b></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Cameron · Roblox Developer</div></footer>
+
+<script>
+  // Edit these lists to add work.
+  // video: file inside videos/ (mp4), or youtube: the video ID. img: file inside images/. Leave all empty for a placeholder.
+  const games = [
+    { title: "Build the Colosseum", role: "Full game", video: "BuildTheColosseum.mp4", text: "Training simulator where the server works together to build a colosseum: shared block goal, gym, upgrades, crates, gladiator unlocks and an admin panel.", tags: ["Simulator", "Systems", "UI"] },
+    { title: "Balloon Physics Machine Learning", role: "AI / physics", video: "BalloonPhysicsMachineLearning.mp4", text: "1v1 balloon arena with custom balloon physics and an opponent bot driven by machine learning.", tags: ["Machine learning", "Physics"] },
+    { title: "Lay Eggs for Animals", role: "Full game", video: "LayEggsForAnimals.mp4", text: "Animal farm game: hatch eggs, place animals on stands, earn money and sell pets through a sortable sell menu.", tags: ["Simulator", "UI"] },
+    { title: "Eat Your Way Out", role: "Full game", video: "IncrementalGame.mp4", text: "Eat through the world, fill your stomach, empty it at the blender with a timing minigame, then buy better tools.", tags: ["Incremental", "Minigame"] },
+    { title: "Cash Mountain", role: "Full game", video: "AnotherIncrementalGame.mp4", text: "Party-lobby vault runs: grab cash from a money pile, fill your bag and spend it on upgrades and boosts.", tags: ["Incremental", "Lobby", "UI"] },
+  ];
+  const results = [
+    { title: "Simulation game", role: "Roblox benchmarks", img: "GameAnalytics2.png", text: "Day 1 retention 15.86% (88th percentile), play-through rate 92nd percentile, playtime up 51.9%.", tags: ["Retention", "Analytics"] },
+    { title: "Survival game", role: "Roblox benchmarks", img: "GameAnalytics3.png", text: "Day 7 retention 96th percentile, Day 1 retention 92nd percentile, daily active users up 1,553% in a week.", tags: ["Retention", "Growth"] },
+    { title: "Game benchmarks", role: "Roblox benchmarks", img: "GameAnalytics.png", text: "Play-through rate 99th percentile, revenue per paying user 84th percentile, 22.2 min average playtime.", tags: ["Monetization"] },
+    { title: "Game benchmarks", role: "Roblox benchmarks", img: "GameAnalytics4.png", text: "Day 1 retention 96th percentile, payer conversion 86th percentile.", tags: ["Retention", "Monetization"] },
+  ];
+  const ui = [
+    { title: "Battle Pass", role: "UI design", img: "BattlepassUI.jpg", text: "Free and premium reward tracks with a level bar and top navigation.", tags: ["UI", "Monetization"] },
+    { title: "Shop", role: "UI design", img: "ShopUI.jpg", text: "Item shop with product cards and buy buttons.", tags: ["UI"] },
+    { title: "Codes", role: "UI design", img: "CodesUI.png", text: "Code redemption menu.", tags: ["UI"] },
+  ];
+  const pipeline = [
+    { title: "AI UI bot", role: "AI tool", img: "UIbotDesign.png", text: "A UI layout generated by my AI UI bot, ready to wire into a game.", tags: ["AI", "UI"] },
+  ];
+
+  function media(p) {
+    if (p.youtube) return `<div class="img"><iframe src="https://www.youtube-nocookie.com/embed/${p.youtube}" style="width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe></div>`;
+    if (p.video) return `<div class="img"><video src="videos/${p.video}" poster="videos/${p.video.replace(".mp4", ".jpg")}" style="width:100%;height:100%;object-fit:cover" controls muted playsinline preload="none"></video></div>`;
+    if (p.img) return `<a class="img" href="images/${p.img}" target="_blank" title="Open full size" style="background-image:url('images/${p.img}');background-size:contain;background-color:#11141a"></a>`;
+    return `<div class="img">video needed</div>`;
+  }
+
+  function render(list, id) {
+    document.getElementById(id).innerHTML = list.map(p => `
+      <div class="card${p.text.startsWith("TODO") ? " todo" : ""}">
+        ${media(p)}
+        <div class="body">
+          <h3>${p.title}</h3>
+          <div class="role">${p.role}</div>
+          <p>${p.text}</p>
+          <div class="chips">${p.tags.map(t => `<span class="chip">${t}</span>`).join("")}</div>
+        </div>
+      </div>`).join("");
+  }
+  document.getElementById("discord").addEventListener("click", e => {
+    e.preventDefault();
+    navigator.clipboard.writeText("Cambuca1x").then(() => document.getElementById("copied").textContent = "copied!");
+  });
+  render(games, "games-cards");
+  render(results, "results-cards");
+  render(ui, "ui-cards");
+  render(pipeline, "pipeline-cards");
+</script>
+</body>
+</html>
