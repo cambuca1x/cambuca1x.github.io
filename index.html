@@ -67,7 +67,7 @@
 
 <nav><div class="wrap">
   <b>Cameron</b>
-  <div class="links"><a href="#games">Games</a><a href="#results">Results</a><a href="#ui">UI</a><a href="#pipeline">AI Workflow</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  <div class="links"><a href="#games">Games</a><a href="#results">Results</a><a href="#pipeline">AI Tools</a><a href="#ui">UI</a><a href="#contact">Contact</a></div>
 </div></nav>
 
 <header><div class="wrap">
@@ -97,28 +97,16 @@
   <div class="grid" id="results-cards"></div>
 </div></section>
 
+<section id="pipeline"><div class="wrap">
+  <h2>AI tools</h2>
+  <p class="sub">The AI tools I built to ship games faster.</p>
+  <div class="grid" id="pipeline-cards"></div>
+</div></section>
+
 <section id="ui"><div class="wrap">
   <h2>User interface</h2>
   <p class="sub">Menus, HUDs and shops I've built.</p>
   <div class="grid" id="ui-cards"></div>
-</div></section>
-
-<section id="skills"><div class="wrap">
-  <h2>What I do</h2>
-  <p class="sub">Full game production, from first script to launch.</p>
-  <div class="skills">
-    <div class="skill"><h3>Scripting</h3><p>Luau gameplay systems: data saving, shops, eggs, rebirths, quests, leaderboards. Server-authoritative and exploit-checked.</p></div>
-    <div class="skill"><h3>UI</h3><p>Responsive menus and HUDs that work on phone, tablet and PC.</p></div>
-    <div class="skill"><h3>AI Engineering</h3><p>Custom AI agents and tools that model, build maps, write systems and test games inside Roblox Studio.</p></div>
-    <div class="skill"><h3>Reverse Engineering</h3><p>Breaking down what makes top games work and rebuilding the mechanics with my own twist.</p></div>
-    <div class="skill"><h3>Game Producing</h3><p>Picking trends, scoping the build and getting a game from idea to launch.</p></div>
-  </div>
-</div></section>
-
-<section id="pipeline"><div class="wrap">
-  <h2>AI workflow</h2>
-  <p class="sub">The AI tools I built to ship games faster than a normal solo dev.</p>
-  <div class="grid" id="pipeline-cards"></div>
 </div></section>
 
 <section id="contact"><div class="wrap">
@@ -136,11 +124,11 @@
   // Edit these lists to add work.
   // video: file inside videos/ (mp4), or youtube: the video ID. img: file inside images/. Leave all empty for a placeholder.
   const games = [
-    { title: "Build the Colosseum", role: "Full game", video: "BuildTheColosseum.mp4", text: "Training simulator where the server works together to build a colosseum: shared block goal, gym, upgrades, crates, gladiator unlocks and an admin panel.", tags: ["Simulator", "Systems", "UI"] },
+    { title: "Build the Colosseum", role: "Full game · shipped in under a week", video: "BuildTheColosseum.mp4", text: "Reverse-engineered from Build the Pyramid. Training simulator where the server works together to build a colosseum: shared block goal, gym, upgrades, crates, gladiator unlocks and an admin panel.", tags: ["Reverse engineering", "Simulator", "Systems"] },
     { title: "Balloon Physics Machine Learning", role: "AI / physics", video: "BalloonPhysicsMachineLearning.mp4", text: "1v1 balloon arena with custom balloon physics and an opponent bot driven by machine learning.", tags: ["Machine learning", "Physics"] },
-    { title: "Lay Eggs for Animals", role: "Full game", video: "LayEggsForAnimals.mp4", text: "Animal farm game: hatch eggs, place animals on stands, earn money and sell pets through a sortable sell menu.", tags: ["Simulator", "UI"] },
-    { title: "Eat Your Way Out", role: "Full game", video: "IncrementalGame.mp4", text: "Eat through the world, fill your stomach, empty it at the blender with a timing minigame, then buy better tools.", tags: ["Incremental", "Minigame"] },
-    { title: "Cash Mountain", role: "Full game", video: "AnotherIncrementalGame.mp4", text: "Party-lobby vault runs: grab cash from a money pile, fill your bag and spend it on upgrades and boosts.", tags: ["Incremental", "Lobby", "UI"] },
+    { title: "Lay Eggs for Animals", role: "Full game · shipped in under 2 days",video: "LayEggsForAnimals.mp4", text: "Animal farm game: hatch eggs, place animals on stands, earn money and sell pets through a sortable sell menu.", tags: ["Simulator", "UI"] },
+    { title: "Eat Your Way Out", role: "Full game · shipped in 4 hours",video: "IncrementalGame.mp4", text: "Eat through the world, fill your stomach, empty it at the blender with a timing minigame, then buy better tools.", tags: ["Incremental", "Minigame"] },
+    { title: "Cash Mountain", role: "Full game · shipped in 5 hours",video: "AnotherIncrementalGame.mp4", text: "Party-lobby vault runs: grab cash from a money pile, fill your bag and spend it on upgrades and boosts.", tags: ["Incremental", "Lobby", "UI"] },
   ];
   const results = [
     { title: "Simulation game", role: "Roblox benchmarks", img: "GameAnalytics2.png", text: "Day 1 retention 15.86% (88th percentile), play-through rate 92nd percentile, playtime up 51.9%.", tags: ["Retention", "Analytics"] },
